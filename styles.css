@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: brown;
+  background-color: orangered;
   font-family: "Roboto", sans-serif;
 }
 
@@ -32,7 +32,12 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: gray;
-  /* text-decoration: none; */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: lightgray;
 }
 
 .contact-btn {
@@ -44,12 +49,21 @@ body {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: rgba(255, 68, 0, 0.8);
+}
+
+.menu-icon {
+  display: none;
 }
 
 .hero {
   gap: 40px;
-  height: 90vh;
   display: flex;
+  min-height: 90vh;
   padding: 40px 80px;
   align-items: center;
   background-color: white;
@@ -109,10 +123,59 @@ body {
   background-color: transparent;
 }
 
-/* justify-content: space-around; */
-/* justify-content: space-evenly; */
-/* justify-content: space-between; */
 
-/* justify-content: center; */
-/* justify-content: start; */
-/* justify-content: end; */
+/* Responsive Design */
+
+@media only screen and (max-width: 1060px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-big {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+  .top-bar {
+    padding: 16px;
+  }
+
+  .nav-links-cont,
+  .contact-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 32px;
+    color: gray;
+    cursor: pointer;
+  }
+
+  .hero {
+    padding: 40px 16px;
+  }
+
+  .text-big {
+    font-size: 40px;
+  }
+
+  .text-small {
+    font-size: 18px;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-btns {
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
