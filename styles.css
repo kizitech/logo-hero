@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: brown;
+  font-family: "Roboto", sans-serif;
+}
+
+.top-bar {
+  gap: 20px;
+  display: flex;
+  padding: 24px 80px;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-links-cont {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  color: gray;
+  /* text-decoration: none; */
+}
+
+.contact-btn {
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hero {
+  gap: 40px;
+  height: 90vh;
+  display: flex;
+  padding: 40px 80px;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-big {
+  color: black;
+  font-size: 90px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.text-small {
+  color: gray;
+  font-size: 24px;
+  margin-top: 40px;
+  max-width: 600px;
+}
+
+.hero-btns {
+  gap: 30px;
+  display: flex;
+  margin-top: 40px;
+}
+
+.join-btn {
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 14px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: orangered;
+}
+
+.learn-more-btn {
+  color: orangered;
+  border: 1px solid orangered;
+  cursor: pointer;
+  border-radius: 14px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+/* justify-content: space-around; */
+/* justify-content: space-evenly; */
+/* justify-content: space-between; */
+
+/* justify-content: center; */
+/* justify-content: start; */
+/* justify-content: end; */
